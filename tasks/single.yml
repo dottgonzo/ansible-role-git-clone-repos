@@ -2,4 +2,4 @@
 - name: "Clone Repository {{ repo }}"
   git:
     repo: "{{ repo }}"
-    dest: "{{ dest }}"   
+    dest: "{{ dest }}"
