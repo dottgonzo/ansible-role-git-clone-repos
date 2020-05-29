@@ -4,3 +4,4 @@
     repo: "{{ repo }}"
     dest: "{{ dest }}"
     version: "{{ version if version is defined else 'master' }}"
+    force: "{{ force if (force is defined and force == 'yes') else 'no' }}"

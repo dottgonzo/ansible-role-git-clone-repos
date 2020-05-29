@@ -14,5 +14,6 @@
     repo: "{{ git_repo_item.repo }}"
     dest: "{{ git_repo_item.dest }}"
     version: "{{ git_repo_item.version if git_repo_item.version is defined else omit }}"
+    force: "{{ git_repo_item.force if (git_repo_item.force is defined and git_repo_item.force == 'yes') else 'no' }}"
   loop_control:
     loop_var: git_repo_item
