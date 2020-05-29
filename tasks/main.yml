@@ -1,6 +1,6 @@
 ---
 - name: Clone Single Repository
-  include_tasks: addkey.yml
+  include_tasks: single.yml
   when:
     - repo is defined
     - git_repos is undefined
