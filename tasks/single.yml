@@ -3,4 +3,4 @@
   git:
     repo: "{{ repo }}"
     dest: "{{ dest }}"
-    version: "{{ version if version is defined else master }}"
+    version: "{{ version if version is defined else 'master' }}"
